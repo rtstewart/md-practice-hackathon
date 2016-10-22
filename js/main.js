@@ -27,7 +27,7 @@ function closeMenu () {
 overlay.addEventListener('click', closeMenu)
 
 /**
- * Handles closing the menu via menu icon
+ * Handles opening and closing the menu via menu icon
  */
 menuIcon.addEventListener('click', function() {
     if (menu.classList.contains('menu-close')) {
