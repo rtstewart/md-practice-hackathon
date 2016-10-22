@@ -149,6 +149,7 @@ div.fade-out {
 
 .menu-open .menu-items {
     opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .menu-item {
@@ -192,4 +193,14 @@ div.fade-out {
 
 .menu-item a:hover {
     color: inherit;
+}
+
+@media all and (max-height: 530px) {
+    .menu-items {
+        top: 50%;
+    }
+
+    .menu-item {
+        font-size: 28px;
+    }
 }
