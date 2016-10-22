@@ -1,6 +1,6 @@
 var menu = document.querySelector('.main-menu'),
-	menuIcon = document.querySelector('.menu-icon'),
-	overlay = document.querySelector('.overlay');
+    menuIcon = document.querySelector('.menu-icon'),
+    overlay = document.querySelector('.overlay');
 
 /**
  * Swaps an existing node's class with another
@@ -8,17 +8,17 @@ var menu = document.querySelector('.main-menu'),
  * @param  {String} remove [Class to be removed]
  * @param  {String} add    [Class to be added]
  */
-function swapClass (elem, remove, add) {
-	elem.classList.remove(remove);
-	elem.classList.add(add);
+function swapClass(elem, remove, add) {
+    elem.classList.remove(remove);
+    elem.classList.add(add);
 }
 
 /**
  * Sequence of actions to close the menu
  */
-function closeMenu () {
-	swapClass(menu, 'menu-open', 'menu-close');
-	swapClass(overlay, 'fade-in', 'fade-out');
+function closeMenu() {
+    swapClass(menu, 'menu-open', 'menu-close');
+    swapClass(overlay, 'fade-in', 'fade-out');
 }
 
 /**
@@ -34,6 +34,6 @@ menuIcon.addEventListener('click', function() {
         swapClass(menu, 'menu-close', 'menu-open');
         swapClass(overlay, 'fade-out', 'fade-in');
     } else {
-    	closeMenu();
+        closeMenu();
     }
 });
