@@ -1,0 +1,150 @@
+html, body {
+  background: #ff0084;
+  background: -webkit-linear-gradient(to left, #ff0084, #33001b);
+  background: linear-gradient(to left, #ff0084, #33001b);
+  border: 0px solid #333;
+  transition: all 0.3s;
+  /*padding: 50px 30px 0 30px;*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+.main-menu {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-style: solid;
+  border-width: 0;
+  border-color: #EEEEEE;
+  transition: border-width 0.3s;
+}
+
+.menu-open {
+  border-width: 20px 20px 20px 90px;
+  height: 100%;
+}
+
+.menu-close {
+  transition: border-width 0.3s, height 0s 0.3s;
+}
+
+.menu-icon {
+  width: 50px;
+  /*position: fixed;*/
+  top: 20px;
+  left: 26px;
+  cursor: pointer;
+}
+
+.menu-bar {
+  height: 4px;
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  transition: color 0.3s;
+}
+
+.menu-open .menu-bar {
+  background-color: #000;
+  transition: color 0.3s;
+}
+
+.menu-bar:first-child {
+  margin-bottom: 7px;
+  transition: all 0.3s;
+  transform-origin: center left;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+div.fade-in {
+  -webkit-animation: fade-in 5s;
+  animation: fade-in 0.3s;
+  opacity: 1;
+}
+
+div.fade-out {
+  -webkit-animation: fade-out 5s;
+  animation: fade-out 0.3s;
+  opacity: 1;
+}
+
+
+/*MENU ITEMS*/
+
+.menu-items {
+  list-style: none;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.menu-open + .menu-items {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.menu-item {
+  /*position: absolute;*/
+  width: 100%;
+  /*text-align: center;*/
+  transition: transform 0.3s, color 0.3s;
+  font-size: 44px;
+  color: #ff0084;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-item a:hover {
+  color: inherit;
+}
+
+
+/*CONTENT*/
+
+.content {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+footer {
+  color: #fff;
+}
+
+.relative {
+position:relative;  
+}
+
+.absolute {
+  position:absolute;
+  top:500px;
+}
+
+.absolute10 {
+  position:absolute;
+  top:100px;
+}
